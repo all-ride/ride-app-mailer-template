@@ -1,0 +1,24 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "ride\\library\\mail\\handler\\MailHandler",
+            "class": "ride\\application\\mail\\handler\\TemplateMailHandler",
+            "id": "template",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "templateResource",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "mailer.template",
+                                "default": "mail/mailer"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
