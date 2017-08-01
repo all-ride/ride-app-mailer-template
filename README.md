@@ -4,7 +4,7 @@ Template Integration of the mailer library with a Ride application.
 
 ## Parameters
 
-* __mailer.template__: Relative template resource to use for your mails
+* __mailer.template__: Relative path to the template resource to use for your mails
 
 ## Related Modules 
 
