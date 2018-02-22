@@ -54,8 +54,8 @@ class TemplateMailHandler extends GenericMailHandler {
         $body = $message->getMessage();
         $variables = array('body' => $body);
 
-        $template = $this->templateFacade->createTemplate($this->templateResource, $variables);
-        $body = $this->templateFacade->render($template);
+        $template = $this->templateService->createTemplate($this->templateResource, $variables);
+        $body = $this->templateService->render($template);
 
         $message->setMessage($body);
 
